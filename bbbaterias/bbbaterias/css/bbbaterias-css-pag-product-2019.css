@@ -496,8 +496,12 @@ th.name-field {
 	
 	/*tamanho foto descrição*/
 	.foto-descricao img {
-	    width: 300px !important;
+		width: 100% !important;
 		margin-bottom: 0 !important;
+	}
+
+	.product-bottom .tabs-content {
+		padding: 0;
 	}
 	
 	/*tamanho foto desc tela*/
@@ -510,4 +514,10 @@ th.name-field {
 		width: 300px !important;
 		margin-bottom: 0 !important;
 	}
+
+	/*espaçamento social*/
+	#produto .box-item-social li {
+		margin: 0px 5px!important;
+	}
+
 }
