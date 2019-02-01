@@ -68,12 +68,10 @@ window.onscroll = function() {
 }
 /* esconder TRUSTEDCOMPANY em rolagem pg produtos */
 
-/* Aumentar tamanho imagem compre junto */
+/* Diminuir tamanho img compre junto com js e delay */
 
 setTimeout(function(){
-    $("#divCompreJunto a img").attr("width", "160px").attr("height", "160px;");
-    $("#divCompreJunto a img").removeAttr("style");
-    $("#divCompreJunto a img").show();
+    $("#divCompreJunto a img").attr("width", "160px").attr("height", "160px;").removeAttr("style").attr("style", "display: block !important;");
 }, 1000);
 
 /* end*/

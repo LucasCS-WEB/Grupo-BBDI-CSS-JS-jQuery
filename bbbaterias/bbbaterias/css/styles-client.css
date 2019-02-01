@@ -1634,10 +1634,10 @@ body.produto .product-image-container .flags {
 
 /* Estilo PDF */
 
-/* Aumentar tamanho imagem compre junto com js */
+/* Diminuir tamanho img compre junto com js e delay */
 
 #divCompreJunto a img {
-    display: none;
+    display: none!important;
 }
 
 /* end */
