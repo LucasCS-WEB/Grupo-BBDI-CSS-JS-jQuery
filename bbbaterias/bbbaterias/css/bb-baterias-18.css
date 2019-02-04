@@ -11467,3 +11467,10 @@ em.amount-items-em {
 html body .x-flag-discount-list {
     background-color: #000 !important;
 }*/
+
+.trustvox-container {
+    padding: 0px 20px 0px 10px;
+}
+.trustvox-container p {
+    padding: 5px 0 2px 0px;
+}
