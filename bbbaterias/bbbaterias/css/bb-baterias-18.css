@@ -4218,6 +4218,7 @@ p.texto-light-footer {
     text-align: center;
     padding-top: 6px;
     line-height: 1.3;
+    z-index: 1;
 }
 
 .zoomPad .x-flag-discount {
