@@ -1,0 +1,35 @@
+/*ajuste padding barra topo*/
+.x-header-top {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*ajuste padding barra logo*/
+.header-wrapper .x-header-middle {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*remove pipe msg welcome*/
+.welcome a {
+    border: none !important;
+}
+
+/*ajuste opacidade nos skus que nao existem combinações */
+.item_doesnt_exist {
+    color: #5a555559;
+}
+
+/*ajuste do 3 sku quando houver*/
+.product-info-container .product-checkout .product-info .topic:nth-child(3) {
+    margin-top: 20px;
+}
+
+@media screen and (min-width:1025px) {
+/*ajuste largura footer*/
+	.page-footer .page-center {
+		width: 1250px;
+	}
+
+}	
+	
