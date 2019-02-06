@@ -28,3 +28,12 @@
 .zopim {
     z-index: 1;
 }
+
+.opinioes-ver-vitrine-mobile iframe#AV_widget_iframe {
+    width: auto!important;
+    height: auto!important;
+}
+
+.abre-r-liguenos-r .abre-r-liguenos {
+    width: auto;
+}
