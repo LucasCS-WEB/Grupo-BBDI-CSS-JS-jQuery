@@ -25,11 +25,6 @@
     margin-top: 20px;
 }
 
-@media screen and (min-width:1025px) {
-/*ajuste largura footer*/
-	.page-footer .page-center {
-		width: 1250px;
-	}
-
-}	
-	
+.zopim {
+    z-index: 1;
+}
