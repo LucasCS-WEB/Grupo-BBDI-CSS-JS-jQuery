@@ -1542,7 +1542,6 @@ body.produto .product-image-container .flags {
 
 
 /* Estilo PDF */
-
 .stylepdf h2 {
     font-size: 20px;
     font-weight: bold;
@@ -1631,13 +1630,23 @@ body.produto .product-image-container .flags {
     }
 }
 
-
-/* Estilo PDF */
-
 /* Diminuir tamanho img compre junto com js e delay */
-
 #divCompreJunto a img {
     display: none!important;
 }
 
-/* end */
+
+/* alertSelectSKU */
+#produto .alertSelectSKU {
+    font-size: 12px;
+    color: red;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    #produto .alertSelectSKU {
+        padding: 15px 15px 10px;
+        margin-top: 15px;
+        margin-bottom: 0;
+    }
+}

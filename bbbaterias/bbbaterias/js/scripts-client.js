@@ -75,3 +75,37 @@ setTimeout(function(){
 }, 1000);
 
 /* end*/
+
+/* alert select SKU */
+$("#produto .product-checkout .buy-button").click(function() {
+
+    window.alert = function(){}
+
+    var hrefButtonBuy = $(this).attr('href');
+
+    if (hrefButtonBuy == "javascript:alert('Por favor, selecione o modelo desejado.');") {
+        
+        if($( window ).width() > 1024) {
+
+            var topAlertSelectSKU = $("#produto .product-content-header").offset().top;
+            $("html, body").animate({ 
+                scrollTop: topAlertSelectSKU - 80
+            }, 500);
+
+        } else {
+
+            var topAlertSelectSKU = $("#produto .product-checkout").offset().top;
+            $("html, body").animate({ 
+                scrollTop: topAlertSelectSKU - 40
+            }, 500);
+
+        }
+        
+        setTimeout(function(){
+            $(".alertSelectSKU").remove();    
+            $("#produto .product-selection-sku").prepend('<div class="alertSelectSKU">Por favor, selecione o modelo desejado.</div>');
+        }, 1000);
+
+    }
+
+});
