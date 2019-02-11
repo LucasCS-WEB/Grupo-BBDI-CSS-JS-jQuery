@@ -110,3 +110,28 @@ $(document).ready(function() {
         $(categorySelectLine).text(categoryRedesignLine);
     }
 });
+
+/* ajuste ancora descricão pg prod */
+$(".product-navigation-link").click(function(e) {
+
+    widhtPGProd = $(window).width();
+
+    if(widhtPGProd < 1025) {
+
+        e.preventDefault();
+
+        var href = $(this).attr("href");
+
+        setTimeout(function(){
+
+            var element = $(href).offset().top;
+
+            $("html, body").animate({
+                scrollTop: element
+            }, 500);
+
+        }, 500);
+
+    }
+
+});
