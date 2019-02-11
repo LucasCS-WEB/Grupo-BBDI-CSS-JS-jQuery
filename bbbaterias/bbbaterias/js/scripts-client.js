@@ -112,7 +112,7 @@ $(document).ready(function() {
 });
 
 /* ajuste ancora descricão pg prod */
-$(".product-navigation-link").click(function(e) {
+$("#produto .product-navigation .product-navigation-link").click(function(e) {
 
     widhtPGProd = $(window).width();
 
