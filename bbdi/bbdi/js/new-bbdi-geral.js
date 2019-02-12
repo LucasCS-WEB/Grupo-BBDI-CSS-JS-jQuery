@@ -1202,6 +1202,15 @@ var BBDI_Geral = {
 
         },
 
+        newsletter: function() {
+
+            $("footer .connect-us .button").click(function() {
+                $("footer .connect-us .newsletter-text, footer .connect-us .button").hide(),
+                $("footer .connect-us .newsletter-form").show();
+            });
+
+        },
+
         init: function() {
             this.NavFixed(),
             this.NavContainerFixed(),
@@ -1240,7 +1249,8 @@ var BBDI_Geral = {
             this.titleSearchSingleNavigator(),
             this.dev(),
             this.hrefBreadcrumbMobileReturn(),
-            this.checkShowMoreCat()
+            this.checkShowMoreCat(),
+            this.newsletter()
         },
         init_ajax: function() {
             this.pageProduct(),

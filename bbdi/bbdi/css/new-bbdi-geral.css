@@ -38173,16 +38173,131 @@ body.departament .menu-departamento h4 {
 }
 /* mobile settings - end */
 
+/* newsletter */
+footer .connect-us .sign-up {
+	font-size: initial!important;
+}
 
+footer .connect-us .newsletter-text,
+footer .connect-us .newsletter-form {
+	float: left;
+}
 
+footer .connect-us .sign-up .text {
+	width: 340px;
+}
 
+footer .connect-us .newsletter-form  {
+	display: none;
+}
+
+footer .connect-us .newsletter-form h3, p {
+	display: none
+}
+
+footer .connect-us .newsletter-form input[type="text"] {
+	width: 275px;
+	height: 45px;
+	border: 1px solid #857f7f;
+	font: 16px ProximaNova-Regular,Arial;
+	color: #828282;
+	padding: 4px 8px;
+	margin-right: 10px;
+}
+
+footer .connect-us .newsletter-form #newsletterButtonOK,
+footer .connect-us .newsletter-form .bt-voltar {
+	width: 200px;
+	height: 45px;
+	font-size: 18px;
+	font-family: ProximaNova-Semibold,"Arial Bold",Sans-Serif;
+	background: #015581;
+	text-align: center;
+	color: #f6f6f6;
+	cursor: pointer;
+}
+
+footer .connect-us .newsletter-form fieldset.error {
+	float: left;
+	margin-right: 10px;
+	text-align: right;
+}
+
+footer .connect-us .newsletter-form fieldset.success {
+	text-align: right;
+}
+
+footer .connect-us .newsletter-form fieldset.success em {
+	font-family: inherit;
+}
+
+.connect-us .sign-up {
+	padding-right: 0px!important;
+}
+
+@media only screen and (max-width: 1023px) {
+	footer .connect-us .newsletter-form input[type="text"] {
+			width: 225px;
+	}
+
+	footer .connect-us .newsletter-form #newsletterButtonOK,
+	footer .connect-us .newsletter-form .bt-voltar {
+			width: 150px;
+	}
+
+	.connect-us .sign-up {
+			padding-bottom: 10px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	footer .connect-us .newsletter-form input[type="text"] {
+			width: 100%;
+			margin: 10px 0px 10px 0px;
+	}
+
+	footer .connect-us .newsletter-form #newsletterButtonOK,
+	footer .connect-us .newsletter-form .bt-voltar {
+			width: 100%;
+			margin: 10px 0px 50px 0px;
+	}
+
+	footer .connect-us .newsletter-form fieldset.error {
+			text-align: left;
+	}
+
+	footer .connect-us .newsletter-form fieldset.success {
+			text-align: left;
+			margin-bottom: 20px;
+			padding: 20px;
+	}
+
+	footer .connect-us .newsletter-text {
+			float: initial;
+	}
+
+}
+
+@media only screen and (max-width: 375px) {
+	footer .connect-us .newsletter-form input[type="text"] {
+			width: 95%;
+	}
+
+	footer .connect-us .newsletter-form #newsletterButtonOK,
+	footer .connect-us .newsletter-form .bt-voltar {
+			width: 95%;
+	}
+
+	footer .connect-us .newsletter-form fieldset.error {
+			margin-left: 10px;
+	}
+}
+
+/* */
 .grid-model .searchResultsTime,
 .grid-model .sub {
     display: none;
 }
-
-
-
 
 /****************************************/
 /************* End CSS New **************/
