@@ -1204,6 +1204,8 @@ var BBDI_Geral = {
 
         newsletter: function() {
 
+            $("#newsletterButtonOK").val("Cadastrar");
+
             $("footer .connect-us .button").click(function() {
                 $("footer .connect-us .newsletter-text, footer .connect-us .button").hide(),
                 $("footer .connect-us .newsletter-form").show();

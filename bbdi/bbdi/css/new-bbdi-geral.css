@@ -38191,7 +38191,8 @@ footer .connect-us .newsletter-form  {
 	display: none;
 }
 
-footer .connect-us .newsletter-form h3, p {
+footer .connect-us .newsletter-form h3,
+footer .connect-us .newsletter-form p {
 	display: none
 }
 
