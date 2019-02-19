@@ -769,9 +769,9 @@ content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAAtCAYAAAAHpEG5
     margin: 0 auto
 }
 .l-header {
-    background-color: #000000;
+    background-color: #00446b;
     position: relative;
-    padding: 5px 0;
+    padding: 10px 0;
     margin-bottom: 20px;
     display: inline-block;
     width: 100%;
