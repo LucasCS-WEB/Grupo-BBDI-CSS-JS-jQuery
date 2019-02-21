@@ -276,12 +276,11 @@ var BBDI_Geral = {
                                     vtexid.setScopeName('bbdi');
 
                                     vtexid.start({
-                                        returnUrl: '/',
+                                        returnUrl: '/login',
                                         userEmail: emailLogin,
                                         locale: 'pt-BR',
-                                        forceReload: true
-                                    });
-
+                                        forceReload: !1
+                                    }); 
 
                                 } else {
 
