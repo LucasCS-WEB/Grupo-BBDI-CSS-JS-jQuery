@@ -1740,3 +1740,17 @@ body.body-order-placed .container .orderplaced-alert-content .bank-invoice-print
 .clearfix.pull-right.cart-links.cart-links-bottom.hide {
     display: block!important;
 }
+
+/* account */
+body#account .page-center {
+    position: relative;
+    width: 965px;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    body#account .page-center {
+        width: 100%;
+        padding-left: 10px;
+    }
+}
