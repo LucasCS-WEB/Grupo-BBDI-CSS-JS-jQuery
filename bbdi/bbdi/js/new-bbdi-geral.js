@@ -269,18 +269,20 @@ var BBDI_Geral = {
 
                                 } else if (check[0].approved == true) {
 
-                                    $("header #BBDI-mensagem").css("display", "none");
-                                    $("header #BBDI-mensagem .BBDI-messagem-box").addClass("top-hidden");
+                                    //$("header #BBDI-mensagem").css("display", "none");
+                                    //$("header #BBDI-mensagem .BBDI-messagem-box").addClass("top-hidden");
                                     
-                                    vtexid.setScope('09ab571d-6fb5-4099-a067-f304d4a27519');
-                                    vtexid.setScopeName('bbdi');
+                                    //vtexid.setScope('09ab571d-6fb5-4099-a067-f304d4a27519');
+                                    //vtexid.setScopeName('bbdi');
 
-                                    vtexid.start({
-                                        returnUrl: '/login',
-                                        userEmail: emailLogin,
-                                        locale: 'pt-BR',
-                                        forceReload: !1
-                                    }); 
+                                    //vtexid.start({
+                                    //    returnUrl: '/',
+                                    //    userEmail: emailLogin,
+                                    //    locale: 'pt-BR',
+                                    //    forceReload: true
+                                    //}); 
+
+                                    window.location.href="/login";
 
                                 } else {
 
