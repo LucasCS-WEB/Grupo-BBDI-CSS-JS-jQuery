@@ -1166,40 +1166,48 @@ var BBDI_Geral = {
 
         checkShowMoreCat: function() {
 
-            setTimeout(function(){
+            if(window.location.pathname == "/todos-departamentos") {
 
-                if ($(window).width() > 768) {
+                $(".refine-item .refine-showmore").show();
 
-                    var searchSingleNavigatorHeight = $('.search-single-navigator').height();
+            } else {
 
-                    if(searchSingleNavigatorHeight <= 220) {
-                        $(".searchNavigator-list-brand-minor").css("height", "auto");
-                        $(".refine-item .refine-showmore").remove();
+                setTimeout(function(){
+
+                    if ($(window).width() > 768) {
+
+                        var searchSingleNavigatorHeight = $('.search-single-navigator').height();
+
+                        if(searchSingleNavigatorHeight <= 220) {
+                            $(".searchNavigator-list-brand-minor").css("height", "auto");
+                            $(".refine-item .refine-showmore").remove();
+                        } else {
+                            $(".refine-item .refine-showmore").show();
+                        }
+
                     } else {
-                        $(".refine-item .refine-showmore").show();
+                        
+                        $("p#search-filter-open-close").click(function() {
+
+                            setTimeout(function(){
+
+                                var searchSingleNavigatorHeightMobile = $('.search-single-navigator').height();
+
+                                if(searchSingleNavigatorHeightMobile <= 220) {
+                                    $(".refine-item .refine-showmore").remove();
+                                } else {
+                                    $(".refine-item .refine-showmore").show();
+                                }
+
+                            }, 500);
+
+                        });
+
                     }
 
-                } else {
-                    
-                    $("p#search-filter-open-close").click(function() {
+                }, 500);
 
-                        setTimeout(function(){
-
-                            var searchSingleNavigatorHeightMobile = $('.search-single-navigator').height();
-
-                            if(searchSingleNavigatorHeightMobile <= 220) {
-                                $(".refine-item .refine-showmore").remove();
-                            } else {
-                                $(".refine-item .refine-showmore").show();
-                            }
-
-                        }, 500);
-
-                    });
-
-                }
-
-            }, 500);
+            }
 
         },
 
