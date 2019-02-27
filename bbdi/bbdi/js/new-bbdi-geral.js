@@ -206,17 +206,18 @@ var BBDI_Geral = {
 
         checkSessionUserLogin: function() {
 
-            setTimeout(function() {   
-                // se logado  
+            setTimeout(function() {  
+
                 if ( $(".welcome em #login").length <= 0 ) {
-                    $("#logged-welcomeMessage, #logged-orders, #logged-logout, .shoppingCartAmount, .grid-model .start-price").show();
+                    $("#logged-welcomeMessage, #logged-orders, #logged-logout, .shoppingCartAmount, .grid-model .start-price, #header-help").show();
                 } 
-                // se deslogado
+            
                 else {
-                    $("#logged-login, #logged-register, #login-or-register, .rf-header").show(),
-                    $(".grid-model .start-price").text("Entre ou cadastre-se e veja nossos preços");
+                    $("#logged-login, #logged-register, #login-or-register, .rf-header, #header-help").show(),
+                    $(".grid-model .start-price").text("").hide();
                 }
-            }, 2000);
+                
+            }, 1000);
 
         },
 

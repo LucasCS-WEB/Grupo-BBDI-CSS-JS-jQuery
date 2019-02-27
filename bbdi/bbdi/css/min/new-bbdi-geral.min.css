@@ -5557,6 +5557,7 @@
 .quicklink-section > .quicklink-container{
 	max-width: 980px;
 	margin: 0 auto;
+	height: 33px;
 }
 .quicklink-section > .quicklink-container > .quicklink-list{
 	float: right;
@@ -5577,7 +5578,7 @@
 }
 
 .quicklink-link:hover {
-  text-decoration: underline;
+  text-decoration: underline!important;
 }
 .header-container{
 	height: 50px;
