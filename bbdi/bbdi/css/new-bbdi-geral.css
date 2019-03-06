@@ -37533,10 +37533,6 @@ body.departament .menu-departamento h4 {
 	margin-left: 20px;
 }
 
-.New-BBDI-product .total-content {
-    display: none;
-}
-
 .New-BBDI-product .descricao-preco, .New-BBDI-product .economia-de {
     display: none;
 }
@@ -38294,6 +38290,128 @@ footer .connect-us .newsletter-form fieldset.success em {
 			margin-left: 10px;
 	}
 }
+
+.total-qty .quantityText {
+	display: none;
+}
+
+.total-qty input[type="number"] {
+	width: 50px;
+	margin-right: 20px;
+	text-align: center;
+	line-height: 28px;
+	border: 1px solid #857f7f;
+	font: 13px ProximaNova-Regular, Arial;
+	color: #828282;
+	font-size: 16px;
+	height: 30px;
+	padding-left: 10px;
+}
+
+.total-button a.buy-button.buy-button-ref {
+	font-family: ProximaNova-Bold, "Arial Bold", Sans-Serif;
+	text-transform: uppercase;
+	background: #92bc02;
+	text-align: center;
+	font-size: 18px;
+	color: #f6f6f6;
+	height: 45px;
+	font-size: 18px !important;
+	height: 45px;
+	cursor: pointer;
+	line-height: 45px;
+	width: 100%;
+	vertical-align: middle;
+}
+
+	.total-button a.buy-button.buy-button-ref:focus{
+	background-color: #36bae2; 
+	color: #ffffff;
+}
+
+/* produto indisponivel */
+.notifyme.sku-notifyme input#notifymeClientName,
+.notifyme.sku-notifyme input#notifymeClientEmail {
+    width: 100%;
+    border: 1px solid #857f7f;
+    font: 13px ProximaNova-Regular, Arial;
+    color: #828282;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.notifyme.sku-notifyme input#notifymeClientName,
+.notifyme.sku-notifyme input#notifymeClientEmail {
+    width: 100%;
+    border: 1px solid #857f7f;
+    font: 13px ProximaNova-Regular, Arial;
+    color: #828282;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+}
+
+.notifyme.sku-notifyme input#notifymeButtonOK {
+    font-family: ProximaNova-Bold, "Arial Bold", Sans-Serif;
+    text-transform: uppercase;
+    background: #92bc02;
+    text-align: center;
+    font-size: 18px;
+    color: #f6f6f6;
+    height: 45px;
+    cursor: pointer;
+    line-height: 45px;
+    width: 100%;
+}
+
+.notifyme.sku-notifyme input#notifymeButtonOK:active {
+    background-color: #36bae2;
+    color: #ffffff;
+}
+
+.notifyme.sku-notifyme .notifyme-title {
+    margin-bottom: 10px;
+}
+
+.notifyme.sku-notifyme .notifyme-form p {
+    margin-bottom: 10px;
+}
+
+.notifyme.sku-notifyme .notifyme-error {
+    color: #ff0000;
+    font-family: ProximaNova-Bold, "Arial Bold", Sans-Serif;
+    font-weight: normal;
+}
+
+.notifyme.sku-notifyme fieldset.error {
+    margin-top: 10px;
+}
+
+.notifyme.sku-notifyme .notifyme-success {
+    font-family: ProximaNova-Bold, "Arial Bold", Sans-Serif;
+    font-size: 16px;
+    color: #03324c;
+}
+
+.total-content {
+    padding-bottom: 25px!important;
+}
+
+/* item_doesnt_exist */
+.item_doesnt_exist {
+	opacity: 0.4;
+	color: #3c4043b0!important;
+}
+
+.item_doesnt_exist:hover {
+	opacity: 0.4!important;
+	color: #3c4043b0!important;
+	cursor: default!important;
+}
+
 
 /* */
 .grid-model .searchResultsTime,

@@ -856,78 +856,58 @@ var BBDI_Geral = {
 
         },
 
-        addCart: function() {
+        checkDisponibilidade: function() {
 
-            $(".total-content").show();
+            function checkDisponibilidade() {
 
-            $(".js-add-to-cart").click(function() {
-
-                var qtyProduct = $(".New-BBDI-product .total-content .total-qty .text-input").val();
-
-                var erQtyProduct = /^[0-9]+$/;
-
-                var testQtyProduct = erQtyProduct.test(qtyProduct);
-
-                if (testQtyProduct == true) {
-
-                    if (qtyProduct >= "1") {
-                        
-                        var skucorrenteProduct = $("#calculoFrete").attr('skucorrente');
-                        var qtyProduct = $(".qty-label input").val();
-                        var urlAddCartProduct = "https://www.bgrupo.com.br/checkout/cart/add?sku=" + skucorrenteProduct + "&qty=" + qtyProduct + "&seller=1&redirect=true&sc=1";
-                        window.location.href = urlAddCartProduct;
-
+                if ($("body").hasClass("New-BBDI-product")) {
+            
+                    var ifNotifymeTitleActived = $(".notifyme-title-div").attr('style');
+            
+                    if (ifNotifymeTitleActived.indexOf("none") != -1) {
+            
+                        //disponivel
+            
+                        $(".New-BBDI-product .total-price, .New-BBDI-product .total-qty, .New-BBDI-product .total-button, .New-BBDI-product .available-store, .New-BBDI-product .store-shipping").show();
+            
                     } else {
-
-                        $(".New-BBDI-product .total-content .total-qty .text-input").addClass("error");
-                        $(".New-BBDI-product .total-content .total-qty p.error").show();
-
+            
+                        //indisponivel
+            
+                        $(".New-BBDI-product .total-price, .New-BBDI-product .total-qty, .New-BBDI-product .available-store, .New-BBDI-product .store-shipping").hide();
+            
+                        $(".New-BBDI-product .total-button").show();
+            
                     }
-
-                } else {
-
-                    $(".New-BBDI-product .total-content .total-qty .text-input").addClass("error");
-                    $(".New-BBDI-product .total-content .total-qty p.error").show();
-
+            
                 }
-                
-            });
-
-            $(".New-BBDI-product .total-content .total-qty .text-input").keyup(function() {
-
-                $(".New-BBDI-product .total-content .total-qty .text-input").removeClass("error");
-                $(".New-BBDI-product .total-content .total-qty p.error").hide();
-
-            });
-
-        },
-
-        productEsgotado: function() {
-
-            if($("body").hasClass("New-BBDI-product")) {
-
-                var ifNotifymeTitleActived = $(".notifyme-title-div").attr('style');
-
-                if(ifNotifymeTitleActived.indexOf("none") != -1) {
-
-                    $(".New-BBDI-product .total-content .buy-button.buy-button-ref").hide();
-
-                } else {
-
-                    $(".New-BBDI-product .total-content .total-price.no-arrow, .New-BBDI-product .total-content .total-qty, .New-BBDI-product .total-content .total-button").hide();
-
-                }
-
+            
             }
+            
+            checkDisponibilidade();
+            
+            $(".New-BBDI-product .sku-selector-container .skuList span label").click(function() {
+            
+                $(".New-BBDI-product .total-price, .New-BBDI-product .total-qty, .New-BBDI-product .total-button, .New-BBDI-product .available-store, .New-BBDI-product .store-shipping").hide();
+            
+                $("#loading-total-content").show();
+            
+                setTimeout(function(){ 
+            
+                    $("#loading-total-content").hide();
+            
+                    checkDisponibilidade();
+            
+                }, 1000);
+            
+            });
 
         },
 
         shippingProduct: function() {
 
-            //ShippingValue();
-
-            $(window).load(function() {
-
+            ShippingValue();
+            
                 setTimeout(function(){
                     
                     $(".New-BBDI-product .store-shipping .prefixo input").attr("placeholder", "00000-000").addClass("text-input");
@@ -968,8 +948,6 @@ var BBDI_Geral = {
                     });
 
                 }, 400);
-
-            });
 
         },
 
@@ -1250,8 +1228,7 @@ var BBDI_Geral = {
             this.register(),
             this.breadcrumb(),
             this.breadcrumbProduct(),
-            this.addCart(),
-            this.productEsgotado(),
+            this.checkDisponibilidade(),
             this.shippingProduct(),
             this.breadcrumbAllDepartament(),
             this.hrefSecondBreadcrumb(),
