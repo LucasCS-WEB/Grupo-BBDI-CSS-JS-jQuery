@@ -38913,6 +38913,18 @@ footer .connect-us .newsletter-form fieldset.success em {
 	}
 }
 
+.busca-texto-livre-elimina {
+	display: none;
+}
+
+.menu-navegue {
+	display: none;
+}
+
+.errorInputSearch {
+	border: 1px solid #FF0000 !important;
+}
+
 /* */
 .grid-model .searchResultsTime,
 .grid-model .sub {
