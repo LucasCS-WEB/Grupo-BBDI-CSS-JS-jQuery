@@ -38925,6 +38925,14 @@ footer .connect-us .newsletter-form fieldset.success em {
 	border: 1px solid #FF0000 !important;
 }
 
+.New-BBDI-product .pro-img {
+	display: grid;
+}
+
+.New-BBDI-product .loading .thumbs {
+    display: none!important;
+}
+
 /* */
 .grid-model .searchResultsTime,
 .grid-model .sub {
