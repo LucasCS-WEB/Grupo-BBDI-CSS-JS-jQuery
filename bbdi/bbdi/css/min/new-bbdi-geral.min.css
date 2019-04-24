@@ -37972,11 +37972,20 @@ body.departament .menu-departamento h4 {
 }
 
 .New-BBDI-product .entire-collection button.slick-prev.slick-arrow {
-    margin-left: 520px;
+    margin-left: 815px;
+}
+
+.New-BBDI-product .entire-collection .carousel-head {
+	width: 94%;
+}
+
+.New-BBDI-product .entire-collection {
+	display: inline-block;
+	width: 100%;
 }
 
 .New-BBDI-product .entire-collection button.slick-next.slick-arrow {
-    margin-left: 610px;
+    margin-left: 930px;
     margin-top: -309px;
     position: absolute;
 }
@@ -38010,23 +38019,24 @@ body.departament .menu-departamento h4 {
     display: none;
 }
 
+.New-BBDI-product .entire-collection.row {
+	margin-left: 5px;
+}
+
 @media (max-width: 1023px) {
 
     .New-BBDI-product .entire-collection button.slick-prev.slick-arrow {
-        margin-left: 408px;
+        margin-left: 615px;
     }
 
     .New-BBDI-product .entire-collection button.slick-next.slick-arrow {
-        margin-left: 487px;
+        margin-left: 735px;
     }
 
     .New-BBDI-product .entire-collection .carousel-head {
         top: inherit;
-        margin-top: 33px;
-    }
-
-    .New-BBDI-product .entire-collection .carousel-head > .pagers span {
-       margin-top: -19px;
+				margin-top: 33px;
+				width: 725px;
     }
 
     .New-BBDI-product .entire-collection .carousel-head > .pagers {
@@ -38034,9 +38044,11 @@ body.departament .menu-departamento h4 {
     }
 
     .New-BBDI-product .entire-collection a.ver-tudo.blue {
-        top: initial;
-        margin-top: 32px;
-    }
+			top: initial;
+			margin-top: 32px;
+			margin-left: 200px;
+			left: initial;
+	}
 
 }
 /* qvvtProduct - end */
@@ -38931,6 +38943,11 @@ footer .connect-us .newsletter-form fieldset.success em {
 
 .New-BBDI-product .loading .thumbs {
     display: none!important;
+}
+
+.New-BBDI-product .pro-docs {
+	display: inline-block;
+	width: 100%;
 }
 
 /* */
