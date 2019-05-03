@@ -37986,8 +37986,12 @@ body.departament .menu-departamento h4 {
 
 .New-BBDI-product .entire-collection button.slick-next.slick-arrow {
     margin-left: 930px;
-    margin-top: -266px;
+    margin-top: -306px;
     position: absolute;
+}
+
+.New-BBDI-product .slick-slide-qvvt-product li {
+    margin-top: 40px;
 }
 
 .New-BBDI-product .entire-collection .carousel-head {

@@ -1568,6 +1568,32 @@ var BBDI_Geral = {
 
         },
 
+        ordenarPor: function() {
+
+            var url = location.href;
+
+            if (url.indexOf("OrderByTopSaleDesc") !== -1) {
+                $(".select.secondary .current").text("Mais Vendidos");
+            } 
+
+            else if (url.indexOf("OrderByReleaseDateDesc") !== -1)  {
+                $(".select.secondary .current").text("Lançamentos");
+            }
+
+            else if (url.indexOf("OrderByPriceDesc") !== -1) {
+                $(".select.secondary .current").text("Maior Preço");
+            }
+
+            else if (url.indexOf("OrderByPriceAsc") !== -1) {
+                $(".select.secondary .current").text("Menor Preço");
+            }
+
+            else {
+                $(".select.secondary .current").text("Selecione");
+            }
+
+        },
+
         init: function() {
             this.NavFixed(),
             this.NavContainerFixed(),
@@ -1618,7 +1644,8 @@ var BBDI_Geral = {
             this.openNewsletterClosePhone(),
             this.hoverSearchOpen(),
             this.destaqueCategoria(),
-            this.checkboxAllDepartamentsHref()
+            this.checkboxAllDepartamentsHref(),
+            this.ordenarPor()
         },
         init_ajax: function() {
             this.pageProduct(),
