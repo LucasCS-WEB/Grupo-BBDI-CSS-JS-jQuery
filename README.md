@@ -6,7 +6,7 @@ Todos Departamentos: https://www.bbdi.com.br/todos-departamentos
 
 Departamentos: https://www.bbdi.com.br/bateria-para-notebook
 
-Categoria: https://www.bbdi.com.br/bateria-para-notebook/acer?PS=16
+Categoria: https://www.bbdi.com.br/bateria-para-notebook/acer
 
 Página de Produtos: https://www.bbdi.com.br/bateria-para-notebook-bb11-ac085/p
 
